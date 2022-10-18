@@ -1,0 +1,133 @@
+ASSIGNMENT: 2
+
+QUESTIONS:
+
+1)Create 5 Table in IBM db2 and insert data using by using insert Query?
+
+STEPS:
+
+1)DATABASE CREATED:
+
+create database university;
+
+2)5 TABLE CREATED:
+
+a)create table college(ID int primary key,Name varchar(50),Department varchar(25),Place varchar(30));
+
+b)create table student(Regno varchar(12) primary key,Name varchar(20),Gender varchar(10),Email varchar(30),Phoneno varchar(15)); 
+
+c)create table inba suruthi(Semester int,Subject_Code varchar(15) primary key,Grade varchar(10),Result varchar(10));
+
+d)create table books(Code varchar(10) primary key,Book_Name varchar(40),Book_Price varchar(10),Book_Page int);
+
+e)create table hostel(Room_No int primary key,Room_Name varchar(15),Room_Floor varchar(15),Room_Members int);
+
+
+3)USING INSERT QUERY:
+
+a)college Table:
+
+insert into college (ID,Name,Department,Place)values(9627,'Universal College','CSE','Vallioor');
+
+insert into college (ID,Name,Department,Place)values(9626,'PET College','EEE','Vallioor');
+
+insert into college (ID,Name,Department,Place)values(9625,'VV College','ECE','Thisaiyanvilai');
+
+insert into college (ID,Name,Department,Place)values(9624,'Rect College','Mechanical','South vijayanarayanam');
+
+insert into college (ID,Name,Department,Place)values(9623,'Xavier College','Civil','Tirunelveli');
+
+
+b)student Table:
+
+
+insert into student (Regno,Name,Gender,Email,Phoneno)Values('962719104013','Inba suruthi.S ','Female','suruthisuresh2002@gmail.com','9524685325');
+
+insert into student (Regno,Name,Gender,Email,Phoneno)Values('962719104015','Jeba agnes.S','Female','jebaagnes04@gmail.com','7904857581');
+
+insert into student (Regno,Name,Gender,Email,Phoneno)Values('962719104016','Jeya priya .R','Female','jeyapriya6789@gmail.com','9629493903');
+
+insert into student (Regno,Name,Gender,Email,Phoneno)Values('962719104041','varatharajan.V ','Male','varatharajan6374@gmail.com','6374816376');
+
+
+c)shiji Table:
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'CS8601','A+','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'CS8602','B+','PASS');
+
+insert into inba suruthi (Semester,Subject_Code,Grade,Result)values(6,'CS8603','B+','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'CS8611','A+','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'CS8651','B+','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'CS8661','A+','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'CS8662','A+','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'CS8691','A+','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'HS8581','A','PASS');
+
+insert into inba suruthi(Semester,Subject_Code,Grade,Result)values(6,'IT8072','A','PASS');
+
+
+d)books Table:
+
+insert into books(Code,Book_Name,Book_Price,Book_Page)Values('MG8591','Principle Of Management','RS.500',140);
+
+insert into books(Code,Book_Name,Book_Price,Book_Page)Values('CS8792','Cryptography And Network Security','RS.400',340);
+
+insert into books(Code,Book_Name,Book_Price,Book_Page)Values('CS8791','Cloud Computing','RS.350',300);
+
+insert into books(Code,Book_Name,Book_Price,Book_Page)Values('IT8075','Software Project Mangement','RS.420',330);
+
+insert into books(Code,Book_Name,Book_Price,Book_Page)Values('OBM752','Hospital Management','RS.300',340);
+
+
+e)hostel Table:
+
+insert into hostel(Room_No,Room_Name,Room_Floor,Room_Members)values(11,'AC Room','1st Floor',4);
+
+insert into hostel(Room_No,Room_Name,Room_Floor,Room_Members)values(7,'Normal Room','2nd Floor',6);
+
+insert into hostel(Room_No,Room_Name,Room_Floor,Room_Members)values(13,'Food Room','Under Floor',10);
+
+insert into hostel(Room_No,Room_Name,Room_Floor,Room_Members)values(15,'Bath Room','1st Floor',1);
+
+insert into hostel(Room_No,Room_Name,Room_Floor,Room_Members)values(1,'Bed Room','3rd Floor',8);
+
+
+2)Perform UPDATE,DELETE in 5 Tables?
+
+
+STEPS:
+
+
+1)UPDATE Query 5 TABLE :
+
+a)update college SET Place='South vallioor' where Department='CSE';
+
+b)update student SET Email='jeyapriya6789@gmail.com' where Regno='962719104016';
+
+c)update inba suruthi SET Grade='O' where Subject_Code='IT8072';
+
+d)update books SET Book_Page=400 where Code='CS8791';
+
+e)update hostel SET Room_Name='Launch Room' where Room_No=13;
+
+2)DELETE Query 5 TABLE:
+
+a)delete from college;
+
+b)delete from student;
+
+c)delete from inba suruthi;
+
+d)delete from books;
+
+e)delete from hostel;
+
+
+
